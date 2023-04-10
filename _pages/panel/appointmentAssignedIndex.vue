@@ -271,7 +271,9 @@ export default {
           this.appointments = response.data
           this.loading = false
         }).catch(error => {
-          this.loading = false
+          this.$apiResponse.handleError(error, () => {
+            this.loading = false
+          })
         })
       })
     },
@@ -323,8 +325,10 @@ export default {
           this.modal.loading = false
           this.modal.data = response.data
         }).catch(error => {
-          this.modal.loading = false
-          reject(error)
+          this.$apiResponse.handleError(error, () => {
+            this.modal.loading = false
+            reject(error)
+          })
         })
       })
     }
