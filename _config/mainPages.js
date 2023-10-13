@@ -9,7 +9,7 @@ export default {
     page: () => import('@imagina/qcrud/_pages/admin/crudPage'),
     layout: () => import('@imagina/qsite/_layouts/master.vue'),
     title: 'iappointment.cms.sidebar.panelAppointments',
-    icon: 'fas fa-clipboard-check',
+    icon: 'fa-light fa-clipboard-check',
     subHeader: {
       refresh: true,
     }

@@ -4,7 +4,7 @@ const pages = config('pages') // Get Pages from config
 export default [
   {
     title: 'iappointment.cms.sidebar.adminGroup',
-    icon: 'fas fa-clipboard-check',
+    icon: 'fa-light fa-clipboard-check',
     children: [
       pages.mainqappointment.appointmentIndex,
       pages.qappointment.categories // categories setup
