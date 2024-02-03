@@ -48,7 +48,7 @@
             <!--Icon-->
             <q-icon :name="process.message.icon" :color="process.message.color" size="40px" class="q-mb-md"/>
             <!--Message-->
-            <div v-html="process.message.text" class="q-mb-md"></div>
+            <div v-html="process.message.text" class="q-mb-md" ></div>
             <!--Actions-->
             <div class="row q-gutter-x-md justify-center full-width">
               <!--Action Re take appointme-->
