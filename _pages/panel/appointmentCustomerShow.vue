@@ -74,11 +74,12 @@
 <script>
 //Components
 import advanceChat from '@imagina/qchat/_components/advancedChat'
+import eventBus from '@imagina/qsite/_plugins/eventBus'
 
 export default {
   beforeDestroy() {
     this.$root.$off('page.data.refresh')
-    this.$eventBus.$off('iappointment.appoinment.was.changed')
+    eventBus.off('iappointment.appoinment.was.changed')
   },
   props: {},
   components: {advanceChat},
@@ -238,7 +239,7 @@ export default {
         this.getData(true)
       })
       //Appintment completed
-      this.$eventBus.$on('iappointment.appoinment.was.changed', (response) => {
+      eventBus.on('iappointment.appoinment.was.changed', (response) => {
         this.getData(true)
       })
     },
