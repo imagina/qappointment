@@ -72,7 +72,7 @@ import eventBus from '@imagina/qsite/_plugins/eventBus'
 export default {
   beforeDestroy() {
     this.$root.$off('page.data.refresh')
-    eventBus.$off('iappointment.appoinment.was.changed')
+    eventBus.off('iappointment.appoinment.was.changed')
   },
   props: {},
   components: {advancedChat},
@@ -241,7 +241,7 @@ export default {
         this.getAppointments(true)
       })
       //Appintment completed
-      eventBus.$on('iappointment.appoinment.was.changed', (response) => {
+      eventBus.on('iappointment.appoinment.was.changed', (response) => {
         this.$alert.info({
           mode: 'modal',
           message: this.$tr('iappointment.cms.message.newAssignationMessage'),
