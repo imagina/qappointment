@@ -73,8 +73,8 @@
 </template>
 <script>
 //Components
-import advanceChat from '@imagina/qchat/_components/advancedChat'
-import eventBus from '@imagina/qsite/_plugins/eventBus'
+import advanceChat from 'modules/qchat/_components/advancedChat'
+import eventBus from 'modules/qsite/_plugins/eventBus'
 
 export default {
   beforeDestroy() {

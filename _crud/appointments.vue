@@ -95,7 +95,7 @@ export default {
             date: true,
           },
           grid: {
-            component: () => import('@imagina/qappointment/_components/crud/appointmentCard'),
+            component: () => import('modules/qappointment/_components/crud/appointmentCard'),
           }
         },
         update: {
@@ -110,7 +110,7 @@ export default {
             permission: 'iappointment.appointments.edit-all',
             props: {
               crudType: 'select',
-              crudData: import('@imagina/quser/_crud/users'),
+              crudData: import('modules/quser/_crud/users'),
               crudProps: {
                 label: this.$trp('iappointment.cms.form.assigned'),
               },
@@ -127,7 +127,7 @@ export default {
             permission: 'iappointment.appointments.edit-all',
             props: {
               crudType: 'select',
-              crudData: import('@imagina/qappointment/_crud/categories'),
+              crudData: import('modules/qappointment/_crud/categories'),
               crudProps: {
                 label: `${this.$tr('isite.cms.form.category')}*`,
                 rules: [
