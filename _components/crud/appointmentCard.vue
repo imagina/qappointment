@@ -115,7 +115,7 @@
   </div>
 </template>
 <script>
-import advanceChat from '@imagina/qchat/_components/advancedChat'
+import advanceChat from 'modules/qchat/_components/advancedChat'
 
 export default {
   beforeDestroy() {
