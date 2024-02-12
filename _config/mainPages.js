@@ -5,9 +5,9 @@ export default {
     authenticated: true,
     path: '/appointments/index',
     name: 'qappointment.main.appointments.index',
-    crud: import('@imagina/qappointment/_crud/appointments'),
-    page: () => import('@imagina/qcrud/_pages/admin/crudPage'),
-    layout: () => import('@imagina/qsite/_layouts/master.vue'),
+    crud: import('modules/qappointment/_crud/appointments'),
+    page: () => import('modules/qcrud/_pages/admin/crudPage'),
+    layout: () => import('layouts/master.vue'),
     title: 'iappointment.cms.sidebar.panelAppointments',
     icon: 'fa-light fa-clipboard-check',
     subHeader: {
