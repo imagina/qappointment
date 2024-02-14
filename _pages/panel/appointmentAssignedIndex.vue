@@ -71,7 +71,7 @@ import { eventBus } from 'src/plugins/utils'
 
 export default {
   beforeDestroy() {
-    this.$root.$off('page.data.refresh')
+    eventBus.off('page.data.refresh')
     eventBus.off('iappointment.appoinment.was.changed')
   },
   props: {},
@@ -237,7 +237,7 @@ export default {
     //Listen pusher message
     listenEvents() {
       //Refresh page
-      this.$root.$on('page.data.refresh', () => {
+      eventBus.on('page.data.refresh', () => {
         this.getAppointments(true)
       })
       //Appintment completed
