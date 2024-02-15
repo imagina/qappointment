@@ -138,7 +138,7 @@ export default {
       let availableMessages = {
         0: {//Default
           text: this.$tr('isite.cms.message.notFound'),
-          icon: 'power_off',
+          icon: 'fa-light fa-plug-circle-xmark',
           color: 'red'
         },
         1: {//Pending
