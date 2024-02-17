@@ -119,7 +119,7 @@ export default {
                   label: 'fullName', value: 'id'
                 }
               },
-              vIf: this.$auth.hasAccess('iappointment.appointments.edit-all')
+              vIf: this.$hasAccess('iappointment.appointments.edit-all')
             },
           },
           categoryId: {

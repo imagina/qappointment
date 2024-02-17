@@ -104,7 +104,7 @@ export default {
   computed: {
     //Form Error report action
     formErrorId() {
-      return this.$store.getters['qsiteApp/getSettingValueByName']('iappointment::errorFormRelated')
+      return this.$getSetting('iappointment::errorFormRelated')
     },
     //Get conversations from appointments
     assignedConversations() {
@@ -176,7 +176,7 @@ export default {
       }
 
       //Add show customer ssubscriptions action
-      if (this.$auth.hasAccess('iplan.subscriptions.index')) response.menuActions.push({
+      if (this.$hasAccess('iplan.subscriptions.index')) response.menuActions.push({
         name: 'showSubscriptions',
         title: this.$tr('iappointment.cms.message.showSubscriptions'),
         action: (params) => {
