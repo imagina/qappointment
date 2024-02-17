@@ -104,7 +104,7 @@ export default {
   computed: {
     //Form Error report action
     formErrorId() {
-      return this.$store.getters['qsiteApp/getSettingValueByName']('iappointment::errorFormRelated')
+      return this.$getSetting('iappointment::errorFormRelated')
     },
     //Get conversations from appointments
     assignedConversations() {
