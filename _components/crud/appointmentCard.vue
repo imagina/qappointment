@@ -20,10 +20,22 @@
           <label class="text-grey-7 q-mr-xs">{{ field.label }}:</label><label>{{ field.value }}</label>
         </div>
         <!--Information Fields-->
-        <div class="appt-card__fields-field q-py-xs" v-for="(field, keyField) in rowData.informationFields"
-             :key="keyField" v-if="showAllInfo && field">
-          <label class="text-grey-7 q-mr-xs">{{ field.label }}:</label><label>{{ field.value }}</label>
-        </div>
+        <template
+          v-for="(field, keyField) in rowData.informationFields"
+          :key="keyField"
+        >
+          <div
+            class="appt-card__fields-field q-py-xs"
+            v-if="showAllInfo && field"
+          >
+            <label class="text-grey-7 q-mr-xs">
+              {{ field.label }}:
+            </label>
+            <label>
+              {{ field.value }}
+            </label>
+          </div>
+        </template>
       </div>
       <!--Related user-->
       <div class="appt-card__related-users" v-if="showAllInfo && rowData.relatedUsers.length">
