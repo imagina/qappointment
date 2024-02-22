@@ -79,7 +79,7 @@
         <!--Title-->
         <div class="box-title q-mb-sm">{{ $tr('isite.cms.label.chat') }}</div>
         <!--Action-->
-        <q-btn unelevated color="info" rounded no-caps icon="fas fa-comment-alt" @click="showConversation = true"
+        <q-btn unelevated color="info" rounded no-caps icon="fa-light fa-message" @click="showConversation = true"
                :label="$tr('iappointment.cms.message.readFullConversation')"/>
       </div>
       <!--Rating Fields-->
