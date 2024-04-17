@@ -130,7 +130,7 @@
 import advanceChat from 'modules/qchat/_components/advancedChat'
 
 export default {
-  beforeDestroy() {
+  beforeUnmount() {
   },
   props: {
     row: {default: false},

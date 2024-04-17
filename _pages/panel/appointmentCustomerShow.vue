@@ -77,7 +77,7 @@ import advanceChat from 'modules/qchat/_components/advancedChat'
 import { eventBus } from 'src/plugins/utils'
 
 export default {
-  beforeDestroy() {
+  beforeUnmount() {
     eventBus.off('page.data.refresh')
     eventBus.off('iappointment.appoinment.was.changed')
   },
