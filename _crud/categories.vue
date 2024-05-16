@@ -28,7 +28,7 @@ export default {
               format: val => val ? (val.title ? val.title : '-') : '-'
             },
             {
-              name: 'categoryStatus', label: this.$tr('isite.cms.form.status'), field: 'status',
+              name: 'status', label: this.$tr('isite.cms.form.status'), field: 'status',
               format: val => val ? this.$tr('isite.cms.label.enabled') : this.$tr('isite.cms.label.disabled')
             },
             {
